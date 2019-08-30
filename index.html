@@ -10,9 +10,9 @@
         *起動時localstrageから値を取得
         */
         window.onload = function(){
-            var textvalue = localStorage.getItem("text");
+            var textvalue = localStorage.getItem('text');
             //値がある場合
-            if (!textvalue) {
+            if (textvalue) {
                 document.getElementById('textarea').value = textvalue;
             }else{
                 document.getElementById('textarea').value = "議事録＜会議日付＞＜出席者＞＜内容＞●XXXX●XXXX";
