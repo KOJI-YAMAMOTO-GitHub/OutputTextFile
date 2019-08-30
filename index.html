@@ -78,7 +78,7 @@
             //テキストエリアから値を取得
             const textareavalue = document.getElementById('textarea').value;
             localStorage.setItem('text', textareavalue);
-            alert("localstrageを削除しました。");
+            document.getElementById('textarea').value = "";
         }
     </script>
 
@@ -97,7 +97,7 @@
     <input type="button" value="テキストダウンロード" onclick="clickBtn()" />
     </br>
     </br>
-    <input type="button" value="localstrageクリア" onclick="deletelocalstrage()" />
+    <input type="button" value="localstrage&テキストクリア" onclick="deletelocalstrage()" />
     </br>
     <div id="span1"></div>
 </body>
