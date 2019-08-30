@@ -69,6 +69,7 @@
         */
         function deletelocalstrage() {
             localStorage.removeItem('text'); 
+            document.getElementById('textarea').value = '';
         }
         
         /**
@@ -78,7 +79,6 @@
             //テキストエリアから値を取得
             const textareavalue = document.getElementById('textarea').value;
             localStorage.setItem('text', textareavalue);
-            document.getElementById('textarea').value = '';
         }
     </script>
 
